@@ -1,0 +1,1490 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+    
+    
+      
+        <title>Nuclei</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.fe0cca5b.min.css">
+      
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#templating-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="." title="Nuclei" class="md-header-nav__button md-logo" aria-label="Nuclei">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Nuclei
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Templating Guide
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Nuclei" class="md-nav__button md-logo" aria-label="Nuclei">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Nuclei
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Templating Guide
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="." title="Templating Guide" class="md-nav__link md-nav__link--active">
+      Templating Guide
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-details" class="md-nav__link">
+    Template Details
+  </a>
+  
+    <nav class="md-nav" aria-label="Template Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    Info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-requests" class="md-nav__link">
+    HTTP Requests
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTP Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    Method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redirects" class="md-nav__link">
+    Redirects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path" class="md-nav__link">
+    Path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    Body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matchers" class="md-nav__link">
+    Matchers
+  </a>
+  
+    <nav class="md-nav" aria-label="Matchers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    Conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matched-parts" class="md-nav__link">
+    Matched Parts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-matchers" class="md-nav__link">
+    Multiple Matchers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matchers-condition" class="md-nav__link">
+    Matchers Condition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractors" class="md-nav__link">
+    Extractors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-http-template" class="md-nav__link">
+    Example HTTP Template
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns-requests" class="md-nav__link">
+    DNS Requests
+  </a>
+  
+    <nav class="md-nav" aria-label="DNS Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    Class
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursion" class="md-nav__link">
+    Recursion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retries" class="md-nav__link">
+    Retries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matchers_1" class="md-nav__link">
+    Matchers
+  </a>
+  
+    <nav class="md-nav" aria-label="Matchers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types_1" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-dns-template" class="md-nav__link">
+    Example DNS Template
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="examples/" title="Examples" class="md-nav__link">
+      Examples
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="releases/" title="Releases" class="md-nav__link">
+      Releases
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#template-details" class="md-nav__link">
+    Template Details
+  </a>
+  
+    <nav class="md-nav" aria-label="Template Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#info" class="md-nav__link">
+    Info
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-requests" class="md-nav__link">
+    HTTP Requests
+  </a>
+  
+    <nav class="md-nav" aria-label="HTTP Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#method" class="md-nav__link">
+    Method
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redirects" class="md-nav__link">
+    Redirects
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#path" class="md-nav__link">
+    Path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    Body
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matchers" class="md-nav__link">
+    Matchers
+  </a>
+  
+    <nav class="md-nav" aria-label="Matchers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditions" class="md-nav__link">
+    Conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matched-parts" class="md-nav__link">
+    Matched Parts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-matchers" class="md-nav__link">
+    Multiple Matchers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matchers-condition" class="md-nav__link">
+    Matchers Condition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extractors" class="md-nav__link">
+    Extractors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-http-template" class="md-nav__link">
+    Example HTTP Template
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dns-requests" class="md-nav__link">
+    DNS Requests
+  </a>
+  
+    <nav class="md-nav" aria-label="DNS Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    Name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#class" class="md-nav__link">
+    Class
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursion" class="md-nav__link">
+    Recursion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retries" class="md-nav__link">
+    Retries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#matchers_1" class="md-nav__link">
+    Matchers
+  </a>
+  
+    <nav class="md-nav" aria-label="Matchers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#types_1" class="md-nav__link">
+    Types
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-dns-template" class="md-nav__link">
+    Example DNS Template
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="templating-guide">Templating Guide</h1>
+<p><strong>Nuclei</strong> is based on the concepts of <code>YAML</code> based template files that define how the requests will be sent and processed. This allows easy extensibility capabilities to nuclei.</p>
+<p>The templates are written in <code>YAML</code> which specifies a simple human readable format to quickly define the execution process.</p>
+<p>Let's start with the basics and define our own workflow file for detecting the presence of a <code>.git/config</code> file on a webserver and take it from there.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#templating-guide">Templating Guide</a><ul>
+<li><a href="#template-details">Template Details</a><ul>
+<li><a href="#info"><strong>Info</strong></a></li>
+<li><a href="#http-requests"><strong>HTTP Requests</strong></a><ul>
+<li><a href="#method"><strong>Method</strong></a></li>
+<li><a href="#redirects"><strong>Redirects</strong></a></li>
+<li><a href="#path"><strong>Path</strong></a></li>
+<li><a href="#headers"><strong>Headers</strong></a></li>
+<li><a href="#body"><strong>Body</strong></a></li>
+<li><a href="#matchers"><strong>Matchers</strong></a></li>
+<li><a href="#types"><strong>Types</strong></a></li>
+<li><a href="#conditions"><strong>Conditions</strong></a></li>
+<li><a href="#matched-parts"><strong>Matched Parts</strong></a></li>
+<li><a href="#multiple-matchers"><strong>Multiple Matchers</strong></a></li>
+<li><a href="#extractors">Extractors</a></li>
+<li><a href="#example-http-template"><strong>Example HTTP Template</strong></a></li>
+</ul>
+</li>
+<li><a href="#dns-requests"><strong>DNS Requests</strong></a><ul>
+<li><a href="#type"><strong>Type</strong></a></li>
+<li><a href="#name"><strong>Name</strong></a></li>
+<li><a href="#class"><strong>Class</strong></a></li>
+<li><a href="#recursion"><strong>Recursion</strong></a></li>
+<li><a href="#retries"><strong>Retries</strong></a></li>
+<li><a href="#matchers"><strong>Matchers</strong></a></li>
+<li><a href="#example-dns-template"><strong>Example DNS Template</strong></a></li>
+</ul>
+</li>
+<li><a href="#chained-workflow"><strong>Chained workflow</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="template-details">Template Details</h2>
+<p>Each template has a unique ID which is used during output writing to specify the template name for an output line.</p>
+<p>The template file ends with <strong>.yaml</strong> extension. The template files can be created any text editor of your choice.</p>
+<pre><code class="yaml"># id contains the unique identifier for the template.
+id: git-config
+</code></pre>
+
+<p>ID must not contain spaces. This is done to allow easier output parsing.</p>
+<h3 id="info">Info</h3>
+<p>Next important piece of information about a template is the <strong>info</strong> block. Info block provides more context on the purpose of the template and the <strong>author</strong>. It can also contain a <strong>severity</strong> field which indicates the severity of the template.</p>
+<p>Let's add an <strong>info</strong> block to our template as well.</p>
+<pre><code class="yaml">info:
+  # Name is the name of the template
+  name: Git Config File Detection Template
+  # Author is the name of the author for the template
+  author: Ice3man
+  # Severity is the severity for the template.
+  severity: medium
+  #  Description optionally describes the template.
+  description: Searches for the pattern /.git/config on passed URLs.
+</code></pre>
+
+<p>Actual requests and corresponding matchers are placed below the info block and they perform the task of making requests to target servers and finding if the template request was successful.</p>
+<p>Each template file can contain multiple requests to be made. The template is iterated and one by one the desired HTTP/DNS requests are made to the target sites.</p>
+<h3 id="http-requests">HTTP Requests</h3>
+<p>Requests start with a request block which specifies the start of the requests for the template.</p>
+<pre><code class="yaml"># Start the requests for the template right here
+requests:
+</code></pre>
+
+<p>At this point you can define raw requests like the following ones (as of now it's suggested to leave the <code>Host</code> header as in the example with the variable <code>{{Hostname}}</code>).</p>
+<pre><code class="yaml">requests:
+  - raw:
+    - |
+        GET /path1/ HTTP/1.1
+        User-Agent: chrome
+        Host: {{Hostname}}
+        Accept: a1/b1
+    - |
+        POST /path2/ HTTP/1.1
+        User-Agent: chrome
+        Host: {{Hostname}}
+        Accept: a2/b2
+
+        This is the request Body
+</code></pre>
+
+<p>Otherwise you can define structured requests as described in the following paragraphs. Requests can be fine tuned to perform the exact tasks as desired. Nuclei requests are fully configurable meaning you can configure and define each and every single thing about the requests that will be sent to the target servers. A recent addition in raw requests has been the introduction of intruder-like functionalities. It's possible to define placeholders as <code>{{placeholder}}</code>, and perform Sniper, Pitchfork and ClusterBomb attacks. The wordlist for these attacks needs to be defined during the request definition under the <code>Payload</code> field. Finally all DSL functionalities are fully available and supported, and can be used to manipulate the final values. Here follows an example:</p>
+<pre><code class="yaml">id: dummy-raw
+info:
+  name: Example-Fuzzing
+
+requests:
+  - payloads:
+      param_a: /home/user/wordlist_param_a.txt
+      param_b: /home/user/wordlist_param_b.txt
+    attack: clusterbomb # Available options: sniper, pitchfork and clusterbomb
+    raw:
+      # Request with simple param and header manipulation with DSL functions
+      - |
+          POST /?param_a={{param_a}}&amp;paramb={{param_b}} HTTP/1.1
+          User-Agent: {{param_a}}
+          Host: {{Hostname}}
+          another_header: {{base64(param_b)}}
+          Accept: */*
+
+          This is the Body
+      # Request with body manipulation
+      - |
+          DELETE / HTTP/1.1
+          User-Agent: nuclei
+          Host: {{Hostname}}
+
+          This is the body {{sha256(param_a)}}
+      # Yet another one
+      - |
+          PUT / HTTP/1.1
+          Host: {{Hostname}}
+
+          This is again the request body {{html_escape(param_a)}} + {{hex_encode(param_b))}}
+    matchers:
+      - type: word
+        words:
+          - &quot;title&quot;
+          - &quot;body&quot;
+</code></pre>
+
+<p>This functionality is <strong>not optimized</strong> for speed as the internal http library needs to be set explicitly with connection reuse policy.</p>
+<h4 id="method">Method</h4>
+<p>First thing in the request is <strong>method</strong>. Request method can be <strong>GET</strong>, <strong>POST</strong>, <strong>PUT</strong>, <strong>DELETE</strong>, etc depending on the needs.</p>
+<pre><code class="yaml"># Method is the method for the request
+method: GET
+</code></pre>
+
+<h4 id="redirects">Redirects</h4>
+<p>Redirection conditions can be specified per each template. By default, redirects are not followed. However, if desired, they can be enabled with <code>redirects: true</code> in request details. 10 redirects are followed at maximum by default which should be good enough for most use cases. More fine grained control can be exercised over number of redirects followed by using <code>max-redirects</code> field.</p>
+<p>An example of the usage:</p>
+<pre><code class="yaml">requests:
+  - method: GET
+    path:
+      - &quot;{{BaseURL}}/login.php
+    redirects: true
+    max-redirects: 3
+</code></pre>
+
+<h4 id="path">Path</h4>
+<p>The next part of the requests is the <strong>path</strong> of the request path. Dynamic variables can be placed in the path to modify its behavior on runtime. Variables start with <code>{{</code> and end with <code>}}</code> and are case-sensitive.</p>
+<ol>
+<li><strong>BaseURL</strong> - Placing BaseURL as a variable in the path will lead to it being replaced on runtime in the request by the original URL as specified in the target file.</li>
+<li><strong>Hostname</strong> - Hostname variable is replaced by the hostname of the target on runtime.</li>
+</ol>
+<p>Some sample dynamic variable replacement examples:</p>
+<pre><code class="yaml">path: {{BaseURL}}/.git/config
+# This path will be replaced on execution with BaseURL
+# If BaseURL is set to  https://abc.com then the
+# path will get replaced to the following: https://abc.com/.git/config
+</code></pre>
+
+<p>Multiple paths can also be specified in one request which will be requested for the target.</p>
+<h4 id="headers">Headers</h4>
+<p>Headers can also be specified to be sent along with the requests. Headers are placed in form of key/value pairs. An example header configuration looks like this:</p>
+<pre><code class="yaml"># headers contains the headers for the request
+headers:
+  # Custom user-agent header
+  User-Agent: Some-Random-User-Agent
+  # Custom request origin
+  Origin: https://google.com
+</code></pre>
+
+<h4 id="body">Body</h4>
+<p>Body specifies a body to be sent along with the request. For instance:</p>
+<pre><code class="yaml"># Body is a string sent along with the request
+body: &quot;{\&quot;some random JSON\&quot;}&quot;
+</code></pre>
+
+<h4 id="matchers">Matchers</h4>
+<p>Matchers are the core of nuclei. They are what make the tool so powerful. Multiple type of combinations and checks can be added to ensure that the results you get are free from false-positives.</p>
+<h5 id="types">Types</h5>
+<p>Multiple matchers can be specified in a request. There are basically 6 types of matchers:</p>
+<table>
+<thead>
+<tr>
+<th>Matcher Type</th>
+<th>Part Matched</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>status</td>
+<td>Status Code of Response</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Content Length of Response</td>
+</tr>
+<tr>
+<td>word</td>
+<td>Response body or headers</td>
+</tr>
+<tr>
+<td>regex</td>
+<td>Response body or headers</td>
+</tr>
+<tr>
+<td>binary</td>
+<td>Response body</td>
+</tr>
+<tr>
+<td>dsl</td>
+<td>All Response Parts</td>
+</tr>
+</tbody>
+</table>
+<p>To match status codes for responses, you can use the following syntax.</p>
+<pre><code class="yaml">matcher:
+  # Match the status codes
+  - type: status
+    # Some status codes we want to match
+    status:
+      - 200
+      - 302
+</code></pre>
+
+<p>To match binary for hexadecimal responses, you can use the following syntax.</p>
+<pre><code class="yaml">matchers:
+  - type: binary
+    binary:
+      - &quot;504B0304&quot; # zip archive
+      - &quot;526172211A070100&quot; # rar RAR archive version 5.0
+      - &quot;FD377A585A0000&quot; # xz tar.xz archive
+    condition: or
+    part: body
+</code></pre>
+
+<p>To match size, similar structure can be followed. If the status code of response from the site matches any single one specified in the matcher, the request is marked as successful.</p>
+<p><strong>Word</strong> and <strong>Regex</strong> matchers can be further configured depending on the needs of the users.</p>
+<p>Complex matchers of type <strong>dsl</strong> allows to build more elaborated expressions with helper functions, this is an example of a complex DSL matcher:</p>
+<pre><code class="yaml">matchers:
+  - type: dsl
+    dsl:
+      - &quot;len(body)&lt;1024 &amp;&amp; status_code==200&quot; # Body length less than 1024 and 200 status code
+      - &quot;contains(toupper(body), md5(cookie))&quot; # Check if the MD5 sum of cookies is contained in the uppercase body
+</code></pre>
+
+<p>Every part of a http response can be matched:</p>
+<table>
+<thead>
+<tr>
+<th>Response Part</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>content_length</td>
+<td>Header Content-Length</td>
+<td>content_length &gt;= 1024</td>
+</tr>
+<tr>
+<td>status_code</td>
+<td>Response Status Code</td>
+<td>status_code==200</td>
+</tr>
+<tr>
+<td>all_headers</td>
+<td>Unique string containing all headers</td>
+<td>len(all_headers)</td>
+</tr>
+<tr>
+<td>body</td>
+<td>Body as string</td>
+<td>len(body)</td>
+</tr>
+<tr>
+<td>header_name</td>
+<td>Lowercase header name with "-" converted to "_"</td>
+<td>len(user_agent)</td>
+</tr>
+<tr>
+<td>raw</td>
+<td>Headers + Response</td>
+<td>len(raw)</td>
+</tr>
+</tbody>
+</table>
+<p>This is the list for a dns response:</p>
+<table>
+<thead>
+<tr>
+<th>Response Part</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rcode</td>
+<td>Response status</td>
+<td>rcode == "NXDOMAIN</td>
+</tr>
+<tr>
+<td>question</td>
+<td>Response Question Section</td>
+<td>len(question)</td>
+</tr>
+<tr>
+<td>extra</td>
+<td>Response Extra Section</td>
+<td>len(extra)</td>
+</tr>
+<tr>
+<td>answer</td>
+<td>Response Answers Section</td>
+<td>len(answer)</td>
+</tr>
+<tr>
+<td>ns</td>
+<td>Response Authority Section</td>
+<td>len(ns)</td>
+</tr>
+<tr>
+<td>raw</td>
+<td>Full Response</td>
+<td>len(raw)</td>
+</tr>
+</tbody>
+</table>
+<p>The helper functions are:</p>
+<table>
+<thead>
+<tr>
+<th>Helper Function</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>len</td>
+<td>Length of a string</td>
+<td>len("Hello") // Result: 5</td>
+</tr>
+<tr>
+<td>toupper</td>
+<td>string to uppercase</td>
+<td>toupper("Hello") // Result: "HELLO"</td>
+</tr>
+<tr>
+<td>tolower</td>
+<td>string to lowercase</td>
+<td>tolower("Hello") // Result: "hello"</td>
+</tr>
+<tr>
+<td>replace</td>
+<td>Replace string parts</td>
+<td>replace("Hello", "He", "Ha") // Result: "Hallo"</td>
+</tr>
+<tr>
+<td>trim</td>
+<td>Remove trailing unicode chars</td>
+<td>trim("aaaHelloddd", "ad") // Result: "Hello"</td>
+</tr>
+<tr>
+<td>trimleft</td>
+<td>Remove unicode chars from left</td>
+<td>trimleft("aaaHelloddd", "ad") // Result: "Helloddd"</td>
+</tr>
+<tr>
+<td>trimright</td>
+<td>Remove unicode chars from right</td>
+<td>trimleft("aaaHelloddd", "ad") // Result: "aaaHello"</td>
+</tr>
+<tr>
+<td>trimspace</td>
+<td>Remove trailing spaces</td>
+<td>trimspace("  Hello  ") // Result: "Hello"</td>
+</tr>
+<tr>
+<td>trimprefix</td>
+<td>Trim specified prefix</td>
+<td>trimprefix("aaHelloaa", "aa") // Result: "Helloaa"</td>
+</tr>
+<tr>
+<td>trimsuffix</td>
+<td>Trim specified suffix</td>
+<td>trimsuffix("aaHelloaa", "aa") // Result: "aaHello"</td>
+</tr>
+<tr>
+<td>base64</td>
+<td>Encode string to base64</td>
+<td>base64("Hello") // Result: "SGVsbG8="</td>
+</tr>
+<tr>
+<td>base64_decode</td>
+<td>Decode string from base64</td>
+<td>base64_decode("SGVsbG8=") // Result: "Hello"</td>
+</tr>
+<tr>
+<td>url_encode</td>
+<td>URL encode a string</td>
+<td>url_encode("https://projectdiscovery.io/test?a=1") // Result: "https:%2F%2Fprojectdiscovery.io%3Ftest=1"</td>
+</tr>
+<tr>
+<td>url_decode</td>
+<td>URL decode a string</td>
+<td>url_decode("https:%2F%2Fprojectdiscovery.io%3Ftest=1") // Result: "https://projectdiscovery.io/test?a=1"</td>
+</tr>
+<tr>
+<td>hex_encode</td>
+<td>Hex encode a string</td>
+<td>hex_encode("aa") // Result: "6161"</td>
+</tr>
+<tr>
+<td>hex_decode</td>
+<td>Hex decode a string</td>
+<td>hex_decode("6161") // Result: "aa"</td>
+</tr>
+<tr>
+<td>html_escape</td>
+<td>Hex encode a string</td>
+<td>html_escape("<html><body>test</body></html>") // Result: "&lt;html&gt;&lt;body&gt;test&lt;/body&gt;&lt;/html&gt;"</td>
+</tr>
+<tr>
+<td>html_unescape</td>
+<td>Hex decode a string</td>
+<td>html_unescape("&lt;html&gt;&lt;body&gt;test&lt;/body&gt;&lt;/html&gt;") // Result: "<html><body>test</body></html>"</td>
+</tr>
+<tr>
+<td>md5</td>
+<td>Calculate md5 of string</td>
+<td>md5("Hello") // Result: "8b1a9953c4611296a827abf8c47804d7"</td>
+</tr>
+<tr>
+<td>sha256</td>
+<td>Calculate sha256 of string</td>
+<td>sha256("Hello") // Result: "185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969"</td>
+</tr>
+<tr>
+<td>sha1</td>
+<td>Calculate sha1 of string</td>
+<td>sha1("Hello") // Result: "f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0"</td>
+</tr>
+<tr>
+<td>contains</td>
+<td>Verify if a string contains another one</td>
+<td>contains("Hello", "lo") // Result: True</td>
+</tr>
+<tr>
+<td>regex</td>
+<td>Verify a regex versus a string</td>
+<td>regex("H([a-z]+)o", "Hello") // Result: True</td>
+</tr>
+</tbody>
+</table>
+<h5 id="conditions">Conditions</h5>
+<p>Multiple words and regexes can be specified in a single matcher and can be configured with different conditions like <strong>AND</strong> and <strong>OR</strong>.</p>
+<ol>
+<li><strong>AND</strong> - Using AND conditions allows matching of all the words from the list of words for the matcher. Only then will the request be marked as successful when all the words have been matched.</li>
+<li><strong>OR</strong> - Using OR conditions allows matching of a single word from the list of matcher. The request will be marked as successful when even one of the word is matched for the matcher.</li>
+</ol>
+<h5 id="matched-parts">Matched Parts</h5>
+<p>Multiple parts of the response can also be matched for the request.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Matched Part</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body</td>
+<td>Body of the response</td>
+</tr>
+<tr>
+<td>header</td>
+<td>Header of the response</td>
+</tr>
+<tr>
+<td>all</td>
+<td>Both body and header of the response</td>
+</tr>
+</tbody>
+</table>
+<p>Example matchers for response body using the AND condition:</p>
+<pre><code class="yaml">matcher:
+  # Match the body word
+  - type: word
+   # Some words we want to match
+   words:
+     - &quot;[core]&quot;
+     - &quot;[config]&quot;
+   # Both words must be found in the response body
+   condition: and
+   #  We want to match request body (default)
+   part: body
+</code></pre>
+
+<p>Similarly, matchers can be written to match anything that you want to find in the response body allowing unlimited creativity and extensibility.</p>
+<h5 id="multiple-matchers">Multiple Matchers</h5>
+<p>Multiple matchers can be used in a single template to fingerprint multiple conditions with a single request.</p>
+<p>Here is an example of syntax for multiple matchers.</p>
+<pre><code class="yaml">matchers:
+  - type: word
+    name: php
+    words:
+      - &quot;X-Powered-By: PHP&quot;
+      - &quot;PHPSESSID&quot;
+    part: header
+  - type: word
+    name: node
+    words:
+      - &quot;Server: NodeJS&quot;
+      - &quot;X-Powered-By: nodejs&quot;
+    condition: or
+    part: header
+  - type: word
+    name: python
+    words:
+      - &quot;Python/2.&quot;
+      - &quot;Python/3.&quot;
+    condition: or
+    part: header
+</code></pre>
+
+<h5 id="matchers-condition">Matchers Condition</h5>
+<p>While using multiple matchers the default condition is to follow OR operation in between all the matchers, AND operation can be used to make sure return the result if all matchers returns true.</p>
+<pre><code class="yaml">    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - &quot;X-Powered-By: PHP&quot;
+          - &quot;PHPSESSID&quot;
+        condition: or
+        part: header
+
+      - type: word
+        words:
+          - &quot;PHP&quot;
+        part: body
+</code></pre>
+
+<h4 id="extractors">Extractors</h4>
+<p>Extractors are another important feature of nuclei. Extractors can be used to extract and display in results a match from the response body or headers based on a regular expression.</p>
+<p>Currently only <code>regex</code> type extractors are supported. A sample extractor for extracting API keys from the response body is as follows:</p>
+<pre><code class="yaml"># A list of extractors for text extraction
+extractors:
+  # type of the extractor, only regex for now.
+  - type: regex
+    # part of the response to extract (can be headers, all too)
+    part: body
+    # regex to use for extraction.
+    regex:
+      - &quot;(A3T[A-Z0-9]|AKIA|AGPA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}&quot;
+</code></pre>
+
+<h4 id="example-http-template"><strong>Example HTTP Template</strong></h4>
+<p>The final template file for the <code>.git/config</code> file mentioned above is as follows:</p>
+<pre><code class="yaml">id: git-config
+
+info:
+  name: Git Config File
+  author: Ice3man
+  severity: medium
+  description: Searches for the pattern /.git/config on passed URLs.
+
+requests:
+  - method: GET
+    path:
+      - &quot;{{BaseURL}}/.git/config&quot;
+    matchers:
+      - type: word
+        words:
+          - &quot;[core]&quot;
+</code></pre>
+
+<h3 id="dns-requests">DNS Requests</h3>
+<p>Requests start with a dns block which specifies the start of the requests for the template.</p>
+<pre><code class="yaml"># Start the requests for the template right here
+dns:
+</code></pre>
+
+<p>DNS requests can be fine tuned to perform the exact tasks as desired. Nuclei requests are fully configurable meaning you can configure and define each and every single thing about the requests that will be sent to the target servers.</p>
+<h4 id="type">Type</h4>
+<p>First thing in the request is <strong>type</strong>. Request type can be <strong>A</strong>, <strong>NS</strong>, <strong>CNAME</strong>, <strong>SOA</strong>, <strong>PTR</strong>, <strong>MX</strong>, <strong>TXT</strong>, <strong>AAAA</strong>.</p>
+<pre><code class="yaml"># type is the type for the dns request
+type: A
+</code></pre>
+
+<h4 id="name">Name</h4>
+<p>The next part of the requests is the <strong>name</strong> of the request path. Dynamic variables can be placed in the path to modify its value on runtime. Variables start with <code>{{</code> and end with <code>}}</code> and are case-sensitive.</p>
+<ol>
+<li><strong>FQDN</strong> - variable is replaced by the hostname/FQDN of the target on runtime.</li>
+</ol>
+<p>Some sample dynamic variable replacement examples:</p>
+<pre><code class="yaml">name: {{FQDN}}.com
+# This value will be replaced on execution with the FQDN.
+# If FQDN is https://this.is.an.example then the
+# name will get replaced to the following: this.is.an.example.com
+</code></pre>
+
+<p>As of now the tool supports only one question per request.</p>
+<h4 id="class">Class</h4>
+<p>Class type can be <strong>INET</strong>, <strong>CSNET</strong>, <strong>CHAOS</strong>, <strong>HESIOD</strong>, <strong>NONE</strong> and <strong>ANY</strong>. Usually it's enough to just leave it as <strong>INET</strong>.</p>
+<pre><code class="yaml"># method is the class for the dns request
+class: inet
+</code></pre>
+
+<h4 id="recursion">Recursion</h4>
+<p>Recursion is a boolean value, and determines if the resolver should only return cached results, or traverse the whole dns root tree to retrieve fresh results. Generally it's better to leave it as <strong>true</strong>.</p>
+<pre><code class="yaml"># Recursion is a boolean determining if the request is recursive
+recursion: true
+</code></pre>
+
+<h4 id="retries">Retries</h4>
+<p>Retries is the number of attempts a dns query is retried before giving up among different resolvers. It's recommended a reasonable value, like <strong>3</strong>.</p>
+<pre><code class="yaml"># Retries is a number of retries before giving up on dns resolution
+retries: 3
+</code></pre>
+
+<h4 id="matchers_1">Matchers</h4>
+<p>Matchers are just equal to HTTP, but the search is performed on the whole dns response, therefore it's not necessary to specify the <strong>part</strong>. Multiple type of combinations and checks can be added to ensure that the results you get are free from false positives. The complex <strong>dsl</strong> matcher type allows to build complex queries as described in the HTTP section.</p>
+<h5 id="types_1">Types</h5>
+<p>Multiple matchers can be specified in a request. There are basically 5 types of matchers:</p>
+<table>
+<thead>
+<tr>
+<th>Matcher Type</th>
+<th>Part Matched</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>size</td>
+<td>Response size</td>
+</tr>
+<tr>
+<td>word</td>
+<td>Response</td>
+</tr>
+<tr>
+<td>regex</td>
+<td>Response</td>
+</tr>
+<tr>
+<td>binary</td>
+<td>Response</td>
+</tr>
+<tr>
+<td>dsl</td>
+<td>Response</td>
+</tr>
+</tbody>
+</table>
+<h2 id="example-dns-template"><strong>Example DNS Template</strong></h2>
+<p>The final example template file for performing <code>A</code> query, and check if CNAME and A records are in the response is as follows:</p>
+<pre><code class="yaml">id: dummy-cname-a
+
+info:
+  name: Dummy A dns request
+  author: mzack9999
+  severity: none
+  description: Checks if CNAME and A record is returned.
+
+dns:
+  - name: &quot;{{FQDN}}&quot;
+    type: A
+    class: inet
+    recursion: true
+    retries: 3
+    matchers:
+      - type: word
+        words:
+          # The response must contains a CNAME record
+          - &quot;IN\tCNAME&quot;
+          # and also at least 1 A record
+          - &quot;IN\tA&quot;
+        condition: and
+</code></pre>
+
+<h1 id="chained-workflow">Chained workflow</h1>
+<p>It's also possible to create conditional templates which executes after matching the condition from the previous templates, mostly useful for vulnerability detection and exploitation and tech based detection and exploitation, single, multiple along with directory based templates can be executed in chained workflow template.  </p>
+<p>Chained workflow supports both HTTP and DNS request based templates. </p>
+<p>Example of running single / multiple templates only if <code>detect-jira.yaml</code> is detected host running Jira application. </p>
+<pre><code class="yaml">id: workflow-example
+info:
+  name: Jira-Pawner
+  author: mzack9999
+  description: Detect Jira and if found; then check for CVEs in list.
+
+variables:
+
+  # defining templates using variables. 
+  # variables names as user-defined, it could be anything.  
+  # relative path support is now added into the nuclei engine for better UX. 
+
+  jira: panels/detect-jira.yaml
+  jira_cve_1: cves/CVE-2018-20824.yaml
+  jira_cve_2: cves/CVE-2019-3399.yaml
+  jira_cve_3: cves/CVE-2019-11581.yaml
+  jira_cve_4: cves/CVE-2017-18101.yaml
+
+logic: 
+    |
+  if jira() {
+    jira_cve_1()
+    jira_cve_2()
+    jira_cve_3()
+    jira_cve_4()
+
+  }
+</code></pre>
+
+<p>Example of running directory based templates when <code>detect-jira.yaml</code> is detected host running Jira application, based on this you can define your own workflow to run scans based on any or specific stacks. </p>
+<pre><code class="yaml">id: workflow-example
+info:
+  name: Jira-Pawner
+  author: mzack9999
+  description: Detect Jira and if found; perform custom pwn.
+
+variables:
+
+  # defining templates using variables. 
+  # variables names as user-defined, it could be anything.  
+  # relative path support is now added into the nuclei engine for better UX. 
+
+  jira: panels/detect-jira.yaml
+  jira_pwn: my-jira-templates/
+
+ # defining directory to run all the templates
+
+logic: 
+    |
+  if jira() {
+    jira_pwn()
+
+  }
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="examples/" title="Examples" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Examples
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: ".",
+          features: [],
+          search: Object.assign({
+            worker: "assets/javascripts/worker/search.a68abb33.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
