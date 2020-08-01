@@ -636,6 +636,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#intruder-attack" class="md-nav__link">
+    Intruder attack
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#helper-functions" class="md-nav__link">
     Helper functions
   </a>
@@ -1181,6 +1188,13 @@
           <li class="md-nav__item">
   <a href="#intruder-payloads" class="md-nav__link">
     Intruder payloads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intruder-attack" class="md-nav__link">
+    Intruder attack
   </a>
   
 </li>
@@ -1810,9 +1824,9 @@ To extract <code>key-value</code> formatted data from the header, you can use th
         <span class="no">test=body</span>
 </code></pre></div>
 
-<p>Requests can be fine tuned to perform the exact tasks as desired. Nuclei requests are fully configurable meaning you can configure and define each and every single thing about the requests that will be sent to the target servers. A recent addition in raw requests has been the introduction of <strong>intruder</strong>-like functionalities. It's possible to define placeholders as <code>{{placeholder}}</code>, and perform <strong>Sniper</strong>, <strong>Pitchfork</strong> and <strong>ClusterBomb</strong> attacks. The wordlist for these attacks needs to be defined during the request definition under the <code>Payload</code> field, Nuclei supports both file based and in template wordlist support and Finally all DSL functionalities are fully available and supported, and can be used to manipulate the final values. Here follows an example:</p>
+<p>Requests can be fine tuned to perform the exact tasks as desired. Nuclei requests are fully configurable meaning you can configure and define each and every single thing about the requests that will be sent to the target servers.  Here follows an example:</p>
 <h4 id="intruder-payloads">Intruder payloads<a class="headerlink" href="#intruder-payloads" title="Permanent link">&para;</a></h4>
-<p>&larr; Few info about payloads &rarr;</p>
+<p>It's possible to define placeholders with simple keywords (or using brackets {{helper_function(keyword)}} in case mutator functions are needed), and perform <strong>Sniper</strong>, <strong>Pitchfork</strong> and <strong>ClusterBomb</strong> attacks. The wordlist for these attacks needs to be defined during the request definition under the Payload field, with a name matching the keyword, Nuclei supports both file based and in template wordlist support and Finally all DSL functionalities are fully available and supported, and can be used to manipulate the final values.</p>
 <p>An example of the using payloads with local wordlist:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">requests</span><span class="p">:</span>
 
@@ -1820,14 +1834,10 @@ To extract <code>key-value</code> formatted data from the header, you can use th
 
   <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
       <span class="nt">parameter</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">params.txt</span>
-      <span class="nt">header</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bypass.txt</span>
-
-    <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">clusterbomb</span>
-
-    <span class="c1"># Available types: sniper, pitchfork and clusterbomb</span>
+      <span class="nt">header</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">local.txt</span>
 </code></pre></div>
 
-<p>An example of the using payloads with in template wordlist:</p>
+<p>An example of the using payloads with in template wordlist support:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">requests</span><span class="p">:</span>
 
 <span class="c1"># HTTP Intruder fuzzing using in template wordlist.</span>
@@ -1848,6 +1858,16 @@ To extract <code>key-value</code> formatted data from the header, you can use th
 
 <p><strong>Note:-</strong> be careful while selecting attack type, as unexpected input will break the template. </p>
 <p>For example, if you used <code>clusterbomb</code> or <code>pitchfork</code> as attack type and defined only one variable in the payload section, template will fail to compile, as <code>clusterbomb</code> or <code>pitchfork</code> expect more then one variable to use in the template. </p>
+<h4 id="intruder-attack">Intruder attack<a class="headerlink" href="#intruder-attack" title="Permanent link">&para;</a></h4>
+<p>For using intruder, we support multiple attack types, including <code>sniper</code> which generally used to fuzz single parameter, <code>clusterbomb</code> and <code>pitchfork</code> for fuzzing multiple parameters which works same as classical burp intruder on CLI. </p>
+<p>An example of the using using <code>clusterbomb</code> attack to fuzz. </p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Defining HTTP Intruder attack type</span>
+
+    <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">clusterbomb</span>
+
+    <span class="c1"># Available attack types: sniper, pitchfork and clusterbomb</span>
+</code></pre></div>
+
 <h4 id="helper-functions">Helper functions<a class="headerlink" href="#helper-functions" title="Permanent link">&para;</a></h4>
 <p>Here is the list of all supported helper functions can be used in the RAW requests:</p>
 <table>
