@@ -58,9 +58,11 @@
     
   
   
+    
+  
   <!--  -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Nuclei - Community Powered Vulnerability Scanner">
+  <meta property="og:title" content="Nuclei - Community Powered Vulnerability Scanner - Nuclei Docs">
   <meta property="og:description" content="None">
   <meta property="og:url" content="None">
   <meta property="og:image" content="assets/images/banner.png">
@@ -70,7 +72,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@squidfunk">
   <meta name="twitter:creator" content="@squidfunk">
-  <meta name="twitter:title" content="Nuclei - Community Powered Vulnerability Scanner">
+  <meta name="twitter:title" content="Nuclei - Community Powered Vulnerability Scanner - Nuclei Docs">
   <meta name="twitter:description" content="None">
   <meta name="twitter:image" content="assets/images/banner.png">
   <link rel="stylesheet" href="assets/stylesheets/overrides.f63bc39a.min.css">
@@ -189,7 +191,9 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -198,7 +202,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="/" class="md-tabs__link">
+        <a href="." class="md-tabs__link md-tabs__link--active">
           Home
         </a>
       
@@ -250,7 +254,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="releases/changelog" class="md-tabs__link">
+        <a href="releases/changelog/" class="md-tabs__link">
           Releases
         </a>
       
@@ -273,7 +277,7 @@
         <div class="tx-hero__content">
           <h1>Nuclei templates documentation</h1>
           <p>Go write your own templates.</p>
-          <a href="/templating-guide" title="" class="md-button md-button--primary">
+          <a href="/templating-guide" title="Install" class="md-button md-button--primary">
             Get started
           </a>
           <a target="_blank" href="https://github.com/projectdiscovery/nuclei/" title="Go to repository" class="md-button">
@@ -320,10 +324,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
     
     <label class="md-nav__link" for="nav-1">
       Home
@@ -345,11 +351,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="/" title="None" class="md-nav__link">
-      None
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="." title="Nuclei Docs" class="md-nav__link md-nav__link--active">
+      Nuclei Docs
     </a>
+    
   </li>
 
         
@@ -671,7 +684,7 @@
 
 
   <li class="md-nav__item">
-    <a href="releases/changelog" title="Nuclei" class="md-nav__link">
+    <a href="releases/changelog/" title="Nuclei" class="md-nav__link">
       Nuclei
     </a>
   </li>
