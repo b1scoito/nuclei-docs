@@ -170,7 +170,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../get-started/#get-started" class="md-tabs__link">
+        <a href="../get-started" class="md-tabs__link">
           Get Started
         </a>
       
@@ -179,6 +179,17 @@
 
       
         
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="./" class="md-tabs__link">
+          Templating Guide
+        </a>
+      
+    </li>
+  
+
       
         
   
@@ -317,7 +328,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../get-started/#get-started" title="Install" class="md-nav__link">
+    <a href="../get-started" title="Install" class="md-nav__link">
       Install
     </a>
   </li>
@@ -341,7 +352,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../get-started/#uses" title="Uses" class="md-nav__link">
+    <a href="../get-started/#using-nuclei" title="Uses" class="md-nav__link">
       Uses
     </a>
   </li>
@@ -353,7 +364,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../get-started/" title="Contribution" class="md-nav__link">
+    <a href="../get-started/#code-contribution" title="Contribution" class="md-nav__link">
       Contribution
     </a>
   </li>
@@ -380,333 +391,41 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
+  <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Templating Guide
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Templating Guide" class="md-nav__link md-nav__link--active">
+    <label class="md-nav__link" for="nav-3">
       Templating Guide
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
-      Table of contents
     </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#template-details" class="md-nav__link">
-    Template Details
-  </a>
-  
-    <nav class="md-nav" aria-label="Template Details">
-      <ul class="md-nav__list">
+    <nav class="md-nav" aria-label="Templating Guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Templating Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
         
-          <li class="md-nav__item">
-  <a href="#information" class="md-nav__link">
-    Information
-  </a>
-  
-</li>
         
-          <li class="md-nav__item">
-  <a href="#http-requests" class="md-nav__link">
-    HTTP Requests
-  </a>
-  
-    <nav class="md-nav" aria-label="HTTP Requests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#method" class="md-nav__link">
-    Method
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
-    Redirects
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#path" class="md-nav__link">
-    Path
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#headers" class="md-nav__link">
-    Headers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#body" class="md-nav__link">
-    Body
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#session" class="md-nav__link">
-    Session
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#matchers" class="md-nav__link">
-    Matchers
-  </a>
-  
-    <nav class="md-nav" aria-label="Matchers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#types" class="md-nav__link">
-    Types
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conditions" class="md-nav__link">
-    Conditions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#matched-parts" class="md-nav__link">
-    Matched Parts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-matchers" class="md-nav__link">
-    Multiple Matchers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#matchers-condition" class="md-nav__link">
-    Matchers Condition
-  </a>
-  
-</li>
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="./" title="Template Details" class="md-nav__link">
+      Template Details
+    </a>
+  </li>
+
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#extractors" class="md-nav__link">
-    Extractors
-  </a>
-  
-    <nav class="md-nav" aria-label="Extractors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#types_1" class="md-nav__link">
-    Types
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#matched-parts_1" class="md-nav__link">
-    Matched Parts
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dynamic-extractor" class="md-nav__link">
-    Dynamic extractor
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-http-template" class="md-nav__link">
-    Example HTTP Template
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#http-raw-requests" class="md-nav__link">
-    HTTP Raw requests
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dns-requests" class="md-nav__link">
-    DNS Requests
-  </a>
-  
-    <nav class="md-nav" aria-label="DNS Requests">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#type" class="md-nav__link">
-    Type
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#name" class="md-nav__link">
-    Name
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#class" class="md-nav__link">
-    Class
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#recursion" class="md-nav__link">
-    Recursion
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#retries" class="md-nav__link">
-    Retries
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#matchers_1" class="md-nav__link">
-    Matchers
-  </a>
-  
-    <nav class="md-nav" aria-label="Matchers">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#types_2" class="md-nav__link">
-    Types
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-dns-template" class="md-nav__link">
-    Example DNS Template
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#workflows" class="md-nav__link">
-    Workflows
-  </a>
-  
-    <nav class="md-nav" aria-label="Workflows">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#single-template-chain" class="md-nav__link">
-    Single template chain
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#directory-based-chains" class="md-nav__link">
-    Directory based chains
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#chaining-multiple-matchers" class="md-nav__link">
-    Chaining multiple matchers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#example-workflow-template" class="md-nav__link">
-    Example Workflow Template
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -1031,6 +750,33 @@
     HTTP Raw requests
   </a>
   
+    <nav class="md-nav" aria-label="HTTP Raw requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intruder-payloads" class="md-nav__link">
+    Intruder payloads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helper-functions" class="md-nav__link">
+    Helper functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-raw-template" class="md-nav__link">
+    Example RAW Template
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1180,7 +926,7 @@
 <p>Let's start with the basics and define our own workflow file for detecting the presence of a <code>.git/config</code> file on a webserver and take it from there.</p>
 <h2 id="template-details">Template Details<a class="headerlink" href="#template-details" title="Permanent link">&para;</a></h2>
 <p>Each template has a unique ID which is used during output writing to specify the template name for an output line.</p>
-<p>The template file ends with <strong>.yaml</strong> extension. The template files can be created any text editor of your choice.</p>
+<p>The template file ends with <strong>yaml</strong> extension. The template files can be created any text editor of your choice.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># id contains the unique identifier for the template.</span>
 <span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">git-config</span>
 </code></pre></div>
@@ -1621,7 +1367,7 @@ To extract <code>key-value</code> formatted data from the header, you can use th
 </code></pre></div>
 
 <h3 id="http-raw-requests">HTTP Raw requests<a class="headerlink" href="#http-raw-requests" title="Permanent link">&para;</a></h3>
-<p>Another way to create request is using raw requests which comes with more flexibility and support of DSL helper functions, like the following ones (as of now it's suggested to leave the <code>Host</code> header as in the example with the variable <code>{{Hostname}}</code>).</p>
+<p>Another way to create request is using raw requests which comes with more flexibility and support of DSL helper functions, like the following ones (as of now it's suggested to leave the <code>Host</code> header as in the example with the variable <code>{{Hostname}}</code>), All the Matcher, Extractor capabilities can be used with RAW requests in same the way described above. </p>
 <div class="highlight"><pre><span></span><code><span class="nt">requests</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="nt">raw</span><span class="p">:</span>
     <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
@@ -1637,7 +1383,186 @@ To extract <code>key-value</code> formatted data from the header, you can use th
         <span class="no">test=body</span>
 </code></pre></div>
 
-<p>Requests can be fine tuned to perform the exact tasks as desired. Nuclei requests are fully configurable meaning you can configure and define each and every single thing about the requests that will be sent to the target servers. A recent addition in raw requests has been the introduction of <strong>intruder</strong>-like functionalities. It's possible to define placeholders as <code>{{placeholder}}</code>, and perform <strong>Sniper</strong>, <strong>Pitchfork</strong> and <strong>ClusterBomb</strong> attacks. The wordlist for these attacks needs to be defined during the request definition under the <code>Payload</code> field, Nuclei supports both file based and wordlist defined within template and Finally all DSL functionalities are fully available and supported, and can be used to manipulate the final values. Here follows an example:</p>
+<p>Requests can be fine tuned to perform the exact tasks as desired. Nuclei requests are fully configurable meaning you can configure and define each and every single thing about the requests that will be sent to the target servers. A recent addition in raw requests has been the introduction of <strong>intruder</strong>-like functionalities. It's possible to define placeholders as <code>{{placeholder}}</code>, and perform <strong>Sniper</strong>, <strong>Pitchfork</strong> and <strong>ClusterBomb</strong> attacks. The wordlist for these attacks needs to be defined during the request definition under the <code>Payload</code> field, Nuclei supports both file based and in template wordlist support and Finally all DSL functionalities are fully available and supported, and can be used to manipulate the final values. Here follows an example:</p>
+<h4 id="intruder-payloads">Intruder payloads<a class="headerlink" href="#intruder-payloads" title="Permanent link">&para;</a></h4>
+<p>&larr; Few info about payloads &rarr;</p>
+<p>An example of the using payloads with local wordlist:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">requests</span><span class="p">:</span>
+
+<span class="c1"># HTTP Intruder fuzzing using local wordlist.</span>
+
+  <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
+      <span class="nt">parameter</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">params.txt</span>
+      <span class="nt">header</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bypass.txt</span>
+
+    <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">clusterbomb</span>
+
+    <span class="c1"># Available types: sniper, pitchfork and clusterbomb</span>
+</code></pre></div>
+
+<p>An example of the using payloads with in template wordlist:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">requests</span><span class="p">:</span>
+
+<span class="c1"># HTTP Intruder fuzzing using in template wordlist.</span>
+
+  <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
+      <span class="nt">password</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">guest</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">12345</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">123456</span>
+
+    <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sniper</span>
+
+    <span class="c1"># Available types: sniper, pitchfork and clusterbomb</span>
+</code></pre></div>
+
+<p><strong>Note:-</strong> be careful while selecting attack type, as unexpected input will break the template. </p>
+<p>For example, if you used <code>clusterbomb</code> or <code>pitchfork</code> as attack type and defined only one variable in the payload section, template will fail to compile, as <code>clusterbomb</code> or <code>pitchfork</code> expect more then one variable to use in the real world. </p>
+<h4 id="helper-functions">Helper functions<a class="headerlink" href="#helper-functions" title="Permanent link">&para;</a></h4>
+<p>Here is the list of all supported helper functions can be used in the RAW requests:</p>
+<table>
+<thead>
+<tr>
+<th>Helper function</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>len</td>
+<td>Length of a string</td>
+<td>len("Hello")</td>
+</tr>
+<tr>
+<td>toupper</td>
+<td>String to uppercase</td>
+<td>toupper("Hello")</td>
+</tr>
+<tr>
+<td>tolower</td>
+<td>String to lowercase</td>
+<td>tolower("Hello")</td>
+</tr>
+<tr>
+<td>replace</td>
+<td>Replace string parts</td>
+<td>replace("Hello", "He", "Ha")</td>
+</tr>
+<tr>
+<td>trim</td>
+<td>Remove trailing unicode chars</td>
+<td>trim("aaaHelloddd", "ad")</td>
+</tr>
+<tr>
+<td>trimleft</td>
+<td>Remove unicode chars from left</td>
+<td>trimleft("aaaHelloddd", "ad")</td>
+</tr>
+<tr>
+<td>trimright</td>
+<td>Remove unicode chars from right</td>
+<td>trimleft("aaaHelloddd", "ad")</td>
+</tr>
+<tr>
+<td>trimspace</td>
+<td>Remove trailing spaces</td>
+<td>trimspace("  Hello  ")</td>
+</tr>
+<tr>
+<td>trimprefix</td>
+<td>Trim specified prefix</td>
+<td>trimprefix("aaHelloaa", "aa")</td>
+</tr>
+<tr>
+<td>trimsuffix</td>
+<td>Trim specified suffix</td>
+<td>trimsuffix("aaHelloaa", "aa")</td>
+</tr>
+<tr>
+<td>base64</td>
+<td>Encode string to base64</td>
+<td>base64("Hello")</td>
+</tr>
+<tr>
+<td>base64_decode</td>
+<td>Decode string from base64</td>
+<td>base64_decode("SGVsbG8=")</td>
+</tr>
+<tr>
+<td>url_encode</td>
+<td>URL encode a string</td>
+<td>url_encode("hxxps://projectdiscovery.io/test?a=1")</td>
+</tr>
+<tr>
+<td>url_decode</td>
+<td>URL decode a string</td>
+<td>url_decode("https:%2F%2Fprojectdiscovery.io%3Ftest=1")</td>
+</tr>
+<tr>
+<td>hex_encode</td>
+<td>Hex encode a string</td>
+<td>hex_encode("aa")</td>
+</tr>
+<tr>
+<td>hex_decode</td>
+<td>Hex decode a string</td>
+<td>hex_decode("6161")</td>
+</tr>
+<tr>
+<td>html_escape</td>
+<td>Hex encode a string</td>
+<td>html_escape("<html><body>test</body></html>")</td>
+</tr>
+<tr>
+<td>html_unescape</td>
+<td>Hex decode a string</td>
+<td>html_unescape("&lt;html&gt;&lt;body&gt;test&lt;/body&gt;&lt;/html&gt;")</td>
+</tr>
+<tr>
+<td>md5</td>
+<td>Calculate md5 of string</td>
+<td>md5("Hello")</td>
+</tr>
+<tr>
+<td>sha256</td>
+<td>Calculate sha256 of string</td>
+<td>sha256("Hello")</td>
+</tr>
+<tr>
+<td>sha1</td>
+<td>Calculate sha1 of string</td>
+<td>sha1("Hello")</td>
+</tr>
+<tr>
+<td>contains</td>
+<td>Verify if a string contains another one</td>
+<td>contains("Hello", "lo")</td>
+</tr>
+<tr>
+<td>regex</td>
+<td>Verify a regex versus a string</td>
+<td>regex("H([a-z]+)o", "Hello")</td>
+</tr>
+</tbody>
+</table>
+<p>An example of the using helper function in the header. </p>
+<div class="highlight"><pre><span></span><code>    <span class="nt">raw</span><span class="p">:</span>
+      <span class="c1"># Request with simple header manipulation with DSL functions</span>
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">GET /manager/html HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">Authorization: Basic {{base64(&#39;username:password&#39;)}}</span>
+        <span class="no">User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept-Language: en-US,en;q=0.9</span>
+        <span class="no">Connection: close</span>
+</code></pre></div>
+
+<h4 id="example-raw-template"><strong>Example RAW Template</strong><a class="headerlink" href="#example-raw-template" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http-raw-request</span>
 <span class="nt">info</span><span class="p">:</span>
   <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Example-Fuzzing</span>
@@ -1676,133 +1601,6 @@ To extract <code>key-value</code> formatted data from the header, you can use th
           <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">200</span>
 </code></pre></div>
 
-<p>Here is the list of all available and supported helper functions:</p>
-<table>
-<thead>
-<tr>
-<th>Helper Function</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>len</td>
-<td>Length of a string</td>
-<td>len("Hello") // Result: 5</td>
-</tr>
-<tr>
-<td>toupper</td>
-<td>string to uppercase</td>
-<td>toupper("Hello") // Result: "HELLO"</td>
-</tr>
-<tr>
-<td>tolower</td>
-<td>string to lowercase</td>
-<td>tolower("Hello") // Result: "hello"</td>
-</tr>
-<tr>
-<td>replace</td>
-<td>Replace string parts</td>
-<td>replace("Hello", "He", "Ha") // Result: "Hallo"</td>
-</tr>
-<tr>
-<td>trim</td>
-<td>Remove trailing unicode chars</td>
-<td>trim("aaaHelloddd", "ad") // Result: "Hello"</td>
-</tr>
-<tr>
-<td>trimleft</td>
-<td>Remove unicode chars from left</td>
-<td>trimleft("aaaHelloddd", "ad") // Result: "Helloddd"</td>
-</tr>
-<tr>
-<td>trimright</td>
-<td>Remove unicode chars from right</td>
-<td>trimleft("aaaHelloddd", "ad") // Result: "aaaHello"</td>
-</tr>
-<tr>
-<td>trimspace</td>
-<td>Remove trailing spaces</td>
-<td>trimspace("  Hello  ") // Result: "Hello"</td>
-</tr>
-<tr>
-<td>trimprefix</td>
-<td>Trim specified prefix</td>
-<td>trimprefix("aaHelloaa", "aa") // Result: "Helloaa"</td>
-</tr>
-<tr>
-<td>trimsuffix</td>
-<td>Trim specified suffix</td>
-<td>trimsuffix("aaHelloaa", "aa") // Result: "aaHello"</td>
-</tr>
-<tr>
-<td>base64</td>
-<td>Encode string to base64</td>
-<td>base64("Hello") // Result: "SGVsbG8="</td>
-</tr>
-<tr>
-<td>base64_decode</td>
-<td>Decode string from base64</td>
-<td>base64_decode("SGVsbG8=") // Result: "Hello"</td>
-</tr>
-<tr>
-<td>url_encode</td>
-<td>URL encode a string</td>
-<td>url_encode("<a href="https://projectdiscovery.io/test?a=1">https://projectdiscovery.io/test?a=1</a>") // Result: "https:%2F%2Fprojectdiscovery.io%3Ftest=1"</td>
-</tr>
-<tr>
-<td>url_decode</td>
-<td>URL decode a string</td>
-<td>url_decode("https:%2F%2Fprojectdiscovery.io%3Ftest=1") // Result: "<a href="https://projectdiscovery.io/test?a=1">https://projectdiscovery.io/test?a=1</a>"</td>
-</tr>
-<tr>
-<td>hex_encode</td>
-<td>Hex encode a string</td>
-<td>hex_encode("aa") // Result: "6161"</td>
-</tr>
-<tr>
-<td>hex_decode</td>
-<td>Hex decode a string</td>
-<td>hex_decode("6161") // Result: "aa"</td>
-</tr>
-<tr>
-<td>html_escape</td>
-<td>Hex encode a string</td>
-<td>html_escape("<html><body>test</body></html>") // Result: "&lt;html&gt;&lt;body&gt;test&lt;/body&gt;&lt;/html&gt;"</td>
-</tr>
-<tr>
-<td>html_unescape</td>
-<td>Hex decode a string</td>
-<td>html_unescape("&lt;html&gt;&lt;body&gt;test&lt;/body&gt;&lt;/html&gt;") // Result: "<html><body>test</body></html>"</td>
-</tr>
-<tr>
-<td>md5</td>
-<td>Calculate md5 of string</td>
-<td>md5("Hello") // Result: "8b1a9953c4611296a827abf8c47804d7"</td>
-</tr>
-<tr>
-<td>sha256</td>
-<td>Calculate sha256 of string</td>
-<td>sha256("Hello") // Result: "185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969"</td>
-</tr>
-<tr>
-<td>sha1</td>
-<td>Calculate sha1 of string</td>
-<td>sha1("Hello") // Result: "<a class="magiclink magiclink-github magiclink-commit" href="https://github.com/squidfunk/mkdocs-material/commit/f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0" title="GitHub Commit: squidfunk/mkdocs-material@f7ff9e8">f7ff9e8</a>"</td>
-</tr>
-<tr>
-<td>contains</td>
-<td>Verify if a string contains another one</td>
-<td>contains("Hello", "lo") // Result: True</td>
-</tr>
-<tr>
-<td>regex</td>
-<td>Verify a regex versus a string</td>
-<td>regex("H([a-z]+)o", "Hello") // Result: True</td>
-</tr>
-</tbody>
-</table>
 <h3 id="dns-requests">DNS Requests<a class="headerlink" href="#dns-requests" title="Permanent link">&para;</a></h3>
 <p>Requests start with a dns block which specifies the start of the requests for the template.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Start the requests for the template right here</span>
@@ -2023,41 +1821,6 @@ To extract <code>key-value</code> formatted data from the header, you can use th
         
 <footer class="md-footer">
   
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
-        
-          <a href="../get-started/" title="Contribution" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-            </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Contribution
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../examples/http/" title="HTTP" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                HTTP
-              </div>
-            </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
@@ -2079,7 +1842,7 @@ To extract <code>key-value</code> formatted data from the header, you can use th
         
         
       
-      <a href="https://github.com/projectdiscovery" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
+      <a href="https://github.com/projectdiscovery/nuclei" target="_blank" rel="noopener" title="github.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
       </a>
     
@@ -2088,7 +1851,7 @@ To extract <code>key-value</code> formatted data from the header, you can use th
         
         
       
-      <a href="https://twitter.com/pdiscoveryio" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
+      <a href="https://twitter.com/pdnuclei" target="_blank" rel="noopener" title="twitter.com" class="md-footer-social__link">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
       </a>
     
