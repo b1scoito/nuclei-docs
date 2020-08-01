@@ -15,7 +15,7 @@
     
     
       
-        <title>Nuclei - Nuclei - Template based vulnerability scanner</title>
+        <title>RAW HTTP - Nuclei - Template based vulnerability scanner</title>
       
     
     
@@ -57,6 +57,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#basic-template" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -81,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Nuclei
+              RAW HTTP
             
           </span>
         </div>
@@ -180,7 +185,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../guide/" class="md-tabs__link">
+        <a href="../../templating-guide/guide/" class="md-tabs__link">
           Templating Guide
         </a>
       
@@ -193,7 +198,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../examples/http/" class="md-tabs__link">
+        <a href="../http/" class="md-tabs__link md-tabs__link--active">
           Template Examples
         </a>
       
@@ -206,7 +211,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" class="md-tabs__link md-tabs__link--active">
+        <a href="../../releases/changelog" class="md-tabs__link">
           Releases
         </a>
       
@@ -415,7 +420,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../guide/" title="Template Details" class="md-nav__link">
+    <a href="../../templating-guide/guide/" title="Template Details" class="md-nav__link">
       Template Details
     </a>
   </li>
@@ -430,10 +435,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Template Examples
@@ -457,7 +464,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../examples/http/" title="HTTP" class="md-nav__link">
+    <a href="../http/" title="HTTP" class="md-nav__link">
       HTTP
     </a>
   </li>
@@ -469,7 +476,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../examples/dns/" title="DNS" class="md-nav__link">
+    <a href="../dns/" title="DNS" class="md-nav__link">
       DNS
     </a>
   </li>
@@ -479,11 +486,56 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../examples/raw/" title="RAW HTTP" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        RAW HTTP
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="RAW HTTP" class="md-nav__link md-nav__link--active">
       RAW HTTP
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-template" class="md-nav__link">
+    Basic template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-raw-request" class="md-nav__link">
+    Multiple RAW request
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -493,7 +545,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../examples/fuzzing/" title="Fuzzing" class="md-nav__link">
+    <a href="../fuzzing/" title="Fuzzing" class="md-nav__link">
       Fuzzing
     </a>
   </li>
@@ -505,7 +557,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../examples/workflow/" title="Workflow" class="md-nav__link">
+    <a href="../workflow/" title="Workflow" class="md-nav__link">
       Workflow
     </a>
   </li>
@@ -520,12 +572,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Releases
@@ -547,18 +597,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Nuclei" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../releases/changelog" title="Nuclei" class="md-nav__link">
       Nuclei
     </a>
-    
   </li>
 
         
@@ -574,12 +617,49 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-template" class="md-nav__link">
+    Basic template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-raw-request" class="md-nav__link">
+    Multiple RAW request
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/projectdiscovery/nuclei/edit/master/docs/releases/releases.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/projectdiscovery/nuclei/edit/master/docs/template-examples/raw.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -587,9 +667,69 @@
                   
                 
                 
-                  <h1>Nuclei</h1>
+                  <h1>RAW HTTP</h1>
                 
-                
+                <h3 id="basic-template">Basic template<a class="headerlink" href="#basic-template" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">basic-raw-example</span>
+<span class="nt">info</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test RAW Template</span>
+  <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
+  <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
+
+<span class="nt">requests</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">raw</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">GET / HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">Origin: {{BaseURL}}</span>
+        <span class="no">Connection: close</span>
+        <span class="no">User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)</span>
+        <span class="no">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept-Language: en-US,en;q=0.9</span>
+
+    <span class="nt">matchers</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
+        <span class="nt">words</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;Test</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">matcher</span><span class="nv"> </span><span class="s">text&quot;</span>
+</code></pre></div>
+
+<h3 id="multiple-raw-request">Multiple RAW request<a class="headerlink" href="#multiple-raw-request" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">multiple-raw-example</span>
+<span class="nt">info</span><span class="p">:</span>
+  <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Test RAW Template</span>
+  <span class="nt">author</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">pdteam</span>
+  <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">info</span>
+
+<span class="nt">requests</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">raw</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">GET / HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">Origin: {{BaseURL}}</span>
+        <span class="no">Connection: close</span>
+        <span class="no">User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)</span>
+        <span class="no">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept-Language: en-US,en;q=0.9</span>
+
+      <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
+        <span class="no">POST /testing HTTP/1.1</span>
+        <span class="no">Host: {{Hostname}}</span>
+        <span class="no">Origin: {{BaseURL}}</span>
+        <span class="no">Connection: close</span>
+        <span class="no">User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)</span>
+        <span class="no">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</span>
+        <span class="no">Accept-Encoding: gzip, deflate</span>
+        <span class="no">Accept-Language: en-US,en;q=0.9</span>
+
+        <span class="no">testing=parameter</span>
+
+    <span class="nt">matchers</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">word</span>
+        <span class="nt">words</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="s">&quot;Test</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">test</span><span class="nv"> </span><span class="s">matcher</span><span class="nv"> </span><span class="s">text&quot;</span>
+</code></pre></div>
                 
               
               
@@ -608,7 +748,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../examples/workflow/" title="Workflow" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../dns/" title="DNS" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -617,11 +757,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Workflow
+                DNS
               </div>
             </div>
           </a>
         
+        
+          <a href="../fuzzing/" title="Fuzzing" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Fuzzing
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>
