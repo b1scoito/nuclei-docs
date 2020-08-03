@@ -773,16 +773,16 @@
 <span class="nt">requests</span><span class="p">:</span>
 
   <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
-      <span class="nt">username</span><span class="p">:</span> 
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
+      <span class="nt">username</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
 
-      <span class="nt">password</span><span class="p">:</span> 
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">guest</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">12345</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">123456</span>
+      <span class="nt">password</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">guest</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">12345</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">123456</span>
 
     <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">clusterbomb</span>
 
@@ -795,7 +795,6 @@
         <span class="no">Host: {{Hostname}}</span>
         <span class="no">another_header: {{base64(&quot;password&quot;)}}</span>
         <span class="no">Accept: */*</span>
-
         <span class="no">body=test</span>
 
     <span class="nt">matchers</span><span class="p">:</span>
@@ -871,7 +870,6 @@
         <span class="no">Connection: close</span>
         <span class="no">User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)</span>
         <span class="no">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</span>
-
         <span class="no">Accept-Language: en-US,en;q=0.9</span>
 
       <span class="p p-Indicator">-</span> <span class="p p-Indicator">|</span>
@@ -881,7 +879,6 @@
         <span class="no">Connection: close</span>
         <span class="no">User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko)</span>
         <span class="no">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8</span>
-
         <span class="no">Accept-Language: en-US,en;q=0.9</span>
 
         <span class="no">testing=parameter</span>

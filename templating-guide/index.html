@@ -1834,16 +1834,17 @@ To extract <code>key-value</code> formatted data from the header, you can use th
 
 <span class="c1"># HTTP Intruder fuzzing using in template wordlist.</span>
 
-  <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
-      <span class="nt">password</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">guest</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">12345</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">123456</span>
+<span class="nt">requests</span><span class="p">:</span>
 
-    <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">sniper</span>
+  <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
+
+      <span class="nt">password</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">guest</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">12345</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">123456</span>
 
     <span class="c1"># Available types: sniper, pitchfork and clusterbomb</span>
 </code></pre></div>
@@ -1996,7 +1997,6 @@ To extract <code>key-value</code> formatted data from the header, you can use th
         <span class="no">Host: {{Hostname}}</span>
         <span class="no">Authorization: Basic {{base64(&#39;username:password&#39;)}}</span>
         <span class="no">User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0</span>
-
         <span class="no">Accept-Language: en-US,en;q=0.9</span>
         <span class="no">Connection: close</span>
 </code></pre></div>
@@ -2009,16 +2009,16 @@ To extract <code>key-value</code> formatted data from the header, you can use th
 <span class="nt">requests</span><span class="p">:</span>
 
   <span class="p p-Indicator">-</span> <span class="nt">payloads</span><span class="p">:</span>
-      <span class="nt">username</span><span class="p">:</span> 
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
+      <span class="nt">username</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
 
-      <span class="nt">password</span><span class="p">:</span> 
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">guest</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">12345</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">123456</span>
+      <span class="nt">password</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admin</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">guest</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">password</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">test</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">12345</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">123456</span>
 
     <span class="nt">attack</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">clusterbomb</span>
 
@@ -2031,9 +2031,9 @@ To extract <code>key-value</code> formatted data from the header, you can use th
         <span class="no">Host: {{Hostname}}</span>
         <span class="no">Authorization: Basic {{base64(&#39;username:password&#39;)}}</span>
         <span class="no">User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0</span>
-
         <span class="no">Accept-Language: en-US,en;q=0.9</span>
         <span class="no">Connection: close</span>
+
     <span class="nt">matchers</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">status</span>
         <span class="nt">status</span><span class="p">:</span>
