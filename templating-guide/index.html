@@ -1411,7 +1411,7 @@
 <li><strong>Hostname</strong> - Hostname variable is replaced by the hostname of the target on runtime.</li>
 </ol>
 <p>Some sample dynamic variable replacement examples:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">path</span><span class="p">:</span> <span class="p p-Indicator">{{</span><span class="nv">BaseURL</span><span class="p p-Indicator">}}</span><span class="l l-Scalar l-Scalar-Plain">/.git/config</span>
+<div class="highlight"><pre><span></span><code><span class="nt">path</span><span class="p">:</span> <span class="s">&quot;{{BaseURL}}/.git/config&quot;</span>
 <span class="c1"># This path will be replaced on execution with BaseURL</span>
 <span class="c1"># If BaseURL is set to  https://abc.com then the</span>
 <span class="c1"># path will get replaced to the following: https://abc.com/.git/config</span>
