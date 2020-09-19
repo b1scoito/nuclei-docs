@@ -1779,6 +1779,37 @@ To extract <code>key-value</code> formatted data from the header, you can use th
 
 <p>Here we used extractor name as variable <code>api_key</code> which holds the value and can be reused in any part of the request dynamically, this feature is supported in RAW request format only. </p>
 <p>Note:- You can use <code>internal: true</code> when you only want to use extractor as dynamic variable, this will avoid printing extracted values in the terminal. </p>
+<p>Extraction of regex content can also be specific for <strong>matchgroups</strong>.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># A list of extractors for text extraction</span>
+<span class="nt">extractors</span><span class="p">:</span>
+  <span class="c1"># type of extractor</span>
+  <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">regex</span>
+    <span class="c1"># Let&#39;s reuse the extracted CSRF token</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">csrf_token</span>
+    <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">body</span>
+    <span class="c1"># group defines the matching group being used. </span>
+    <span class="c1"># In GO the &quot;match&quot; is the full array of all matches and submatches </span>
+    <span class="c1"># match[0] is the full match</span>
+    <span class="c1"># match[n] is the submatches. Most often we&#39;d want match[1] as depicted below</span>
+    <span class="nt">group</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1</span>
+    <span class="nt">regex</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&#39;&lt;input\sname=&quot;csrf_token&quot;\stype=&quot;hidden&quot;\svalue=&quot;([[:alnum:]]{16})&quot;\s/&gt;&#39;</span>
+</code></pre></div>
+
+<p>The above extractor with name <code>csrf_token</code> will hold the value extracted (by <code>([[:alnum:]]{16}))</code> as <code>abcdefgh12345678</code>. This is compared to not using the group variable.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># A list of extractors for text extraction</span>
+<span class="nt">extractors</span><span class="p">:</span>
+  <span class="c1"># type of extractor</span>
+  <span class="p p-Indicator">-</span> <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">regex</span>
+    <span class="c1"># Let&#39;s reuse the extracted CSRF token</span>
+    <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">csrf_html_tag</span>
+    <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">body</span>
+    <span class="c1"># No group here</span>
+    <span class="nt">regex</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&#39;&lt;input\sname=&quot;csrf_token&quot;\stype=&quot;hidden&quot;\svalue=&quot;([[:alnum:]]{16})&quot;\s/&gt;&#39;</span>
+</code></pre></div>
+
+<p>The above extractor with name <code>csrf_html_tag</code> will hold the full match (by <code>&lt;input name="csrf_token"\stype="hidden"\svalue="([[:alnum:]]{16})" /&gt;</code>) as <code>&lt;input name="csrf_token" type="hidden" value="abcdefgh12345678" /&gt;</code>.</p>
 <h4 id="example-http-template"><strong>Example HTTP Template</strong><a class="headerlink" href="#example-http-template" title="Permanent link">&para;</a></h4>
 <p>The final template file for the <code>.git/config</code> file mentioned above is as follows:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">git-config</span>
