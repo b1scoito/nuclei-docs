@@ -653,6 +653,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#nuclei-v211" class="md-nav__link">
+    Nuclei v2.1.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#nuclei-v210" class="md-nav__link">
     Nuclei v2.1.0
   </a>
@@ -802,6 +809,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#nuclei-v211" class="md-nav__link">
+    Nuclei v2.1.1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#nuclei-v210" class="md-nav__link">
     Nuclei v2.1.0
   </a>
@@ -934,6 +948,37 @@
                 
                 
                 <h1 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h1>
+<h2 id="nuclei-v211">Nuclei v2.1.1<a class="headerlink" href="#nuclei-v211" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Added <strong>negative matcher support</strong></li>
+<li>Added <strong>support for severity based filtering</strong> with <code>severity</code> flag  by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/manuelbua" title="GitHub User: manuelbua">@manuelbua</a></li>
+<li>Added <strong>support for template exclusions</strong> with <code>exclude</code> flag by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/manuelbua" title="GitHub User: manuelbua">@manuelbua</a></li>
+<li>Added <code>.nuclei-ignore</code> file support</li>
+<li>Added <strong>rate limit per host</strong> with <code>rl</code>flag by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/CasperGN" title="GitHub User: CasperGN">@CasperGN</a> </li>
+<li>Added template list support with <code>tl</code> flag by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li>Added template name field in JSON output by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li>Added color support for severity by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li>Added Progress bar support with the silent flag by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li><strong>Added support for using local templates along with nuclei-templates</strong></li>
+<li>Added template preloading at the start of the scan</li>
+<li>Added support for  golangci lint by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li>Added JSON output support for DNS templates by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/Marmelatze" title="GitHub User: Marmelatze">@Marmelatze</a></li>
+<li>Added centralize template loaded info message, add output coloring by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/manuelbua" title="GitHub User: manuelbua">@manuelbua</a></li>
+<li>Added template ID on HTTP request error message <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li>Added severity information in the output by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li>Added <strong>match groups support in regex extractor</strong></li>
+<li><strong>Fixed a failed request error on multiple URLs</strong></li>
+<li>Fixed a bug with helper function by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/organiccrap" title="GitHub User: organiccrap">@organiccrap</a></li>
+<li><strong>Fixed a bug with port conflict input with URLs and templates</strong> by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li><strong>Fixed a bug with Workflow detecting <code>No Results</code></strong> by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+<li>Fixed inconsistent output printing in the terminal</li>
+<li>Fixed No JSON output with workflows</li>
+<li>Fixed a bug with matches when multiple headers with the same name by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/CasperGN" title="GitHub User: CasperGN">@CasperGN</a> </li>
+<li>Fixed <code>No result</code> found problem with and condition by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/Marmelatze" title="GitHub User: Marmelatze">@Marmelatze</a></li>
+<li>Fixed an issue with <code>all</code> matched part by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/rykkard" title="GitHub User: rykkard">@rykkard</a></li>
+<li>Updated nuclei-templates current and outdated messages</li>
+<li>Updated template loading UI message by <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/vzamanillo" title="GitHub User: vzamanillo">@vzamanillo</a></li>
+</ul>
 <h2 id="nuclei-v210">Nuclei v2.1.0<a class="headerlink" href="#nuclei-v210" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Nuclei engine rework. </li>
